@@ -16,8 +16,8 @@ logger = logging.getLogger(__name__)
 load_dotenv()
 
 # Token va chat ID ni olish
-BOT_1_TOKEN = os.getenv("7687555090:AAFaGqPhqX7j3sLvYUzRqEhjYhKu1zmhQ3o")
-CHAT_ID_BOT_2 = int(os.getenv("6349583688"))  # Chat ID butun son bo‘lishi kerak
+BOT_1_TOKEN = os.getenv("BOT_1_TOKEN")
+CHAT_ID_BOT_2 = int(os.getenv("CHAT_ID_BOT_2"))  # Chat ID butun son bo‘lishi kerak
 
 async def forward_to_bot_2(update: Update, context: CallbackContext) -> None:
     """Kelgan xabarlarni 2-botga yo‘naltirish"""
